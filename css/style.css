@@ -92,6 +92,12 @@ a {
 .container .wrap-article .wrap-item.item-listnews {
   flex: 1 1 100%;
 }
+.container .wrap-article .wrap-item.item-donors {
+  flex: 1 1 100%;
+}
+.container .wrap-article .wrap-item.item-ques {
+  flex: 1 1 100%;
+}
 /*------------*/
 .container .wrap-article .wrap-item.item-featured .box-feat .story .thumb img {
   width: 100%;
@@ -315,15 +321,156 @@ a {
 .container .wrap-article .wrap-item.item-library .box-media .list-video .story .thumb img {
   width: 100%;
 }
+
+.container .wrap-article .wrap-item.item-listnews .wrap-list {
+  display: flex;
+  justify-content: space-between;
+
+  column-gap: 20px;
+}
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-left {
+  flex: 1.5;
+}
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-right {
+  flex: 2;
+}
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-left .story .thumb img {
+  width: 100%;
+}
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-left .story .des {
+  padding: 20px;
+}
+
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-left .story .des .title {
+  line-height: 1.5;
+}
+
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-left .story .des .sapo {
+  line-height: 1.5;
+}
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-right {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-right .story {
+  width: 31%;
+}
+.container .wrap-article .wrap-item.item-listnews .wrap-list .box-right .story .thumb img {
+  width: 100%;
+}
+
+.container .wrap-article .wrap-item.item-ques {
+  display: flex;
+  justify-content: space-between;
+
+  column-gap: 20px;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxcate {
+  flex: 3;
+}
+.container .wrap-article .wrap-item.item-ques .col-boxques {
+  flex: 1;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content {
+  display: flex;
+  justify-content: space-between;
+
+  column-gap: 20px;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content .box-left {
+  flex: 1.5;
+}
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content .box-right {
+  flex: 2;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content .box-left .story .thumb img {
+  width: 100%;
+}
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content .box-right .story {
+  display: flex;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content .box-right .story .thumb {
+  flex: 1;
+}
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content .box-right .story .title {
+  flex: 2;
+}
+.container .wrap-article .wrap-item.item-ques .col-boxcate .list-content .box-right .story .thumb img {
+  width: 100%;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxques .box-content .story {
+  display: flex;
+  justify-content: space-between;
+
+  column-gap: 20px;
+}
+.container .wrap-article .wrap-item.item-ques .col-boxques .box-content .story .thumb {
+  flex: 1.5;
+}
+.container .wrap-article .wrap-item.item-ques .col-boxques .box-content .story .title {
+  flex: 2;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxques .box-content .story .thumb img {
+  width: 100%;
+}
+.container .wrap-article .wrap-item.item-donors .title-cate {
+  text-align: center;
+  padding: 20px;
+}
+.container .wrap-article .wrap-item.item-donors .box-donors {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 /*----footer-----*/
 .footer {
-  flex: 1 1 900px;
-  margin: 5px;
+  width: calc(100% - 100px);
+  margin: auto;
+  padding: 12px;
+}
+.footer-info {
+  display: flex;
+  padding-top: 25px;
+  margin-top: 20px;
 
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  column-gap: 20px;
+  border-top: 1px solid #cfcfcf;
+  justify-content: space-between;
+}
+.footer-info .rank-1 {
+  display: flex;
+  column-gap: 20px;
+}
+.wrap-logo .logo-1 {
+  background: url(../img/logo.png) center center/130px no-repeat;
+  width: 130px;
+  height: 41px;
+  display: block;
+  margin-bottom: 13px;
+}
+.wrap-logo .logo-2 {
+  background: url(../img/bank.png) center center no-repeat;
+  width: 130px;
+  height: 59px;
+  display: block;
+}
+.footer ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.footer-info .rank-2 {
+  text-align: right;
 }
