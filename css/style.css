@@ -57,7 +57,7 @@ header .navigation {
   object-fit: cover;
 }
 
-.navigation .search {
+.navigation .buttons {
   display: flex;
   column-gap: 10px;
 }
@@ -511,7 +511,7 @@ a {
 }
 
 .container .wrap-article .wrap-item.item-listnews .wrap-list .box-right .story {
-  width: 31%;
+  flex: 1 1 140px;
 }
 
 .container .wrap-article .wrap-item.item-listnews .wrap-list .box-right .story .thumb img {
@@ -536,6 +536,12 @@ a {
 .container .wrap-article .wrap-item.item-ques .col-boxques {
   flex: 1;
   border-top: 1px solid #cfcfcf;
+}
+
+.container .wrap-article .wrap-item.item-ques .col-boxques .box-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .container .wrap-article .wrap-item.item-ques .col-boxcate .title-cate {
@@ -612,8 +618,7 @@ a {
 .container .wrap-article .wrap-item.item-ques .col-boxques .box-content .story {
   display: flex;
   justify-content: space-between;
-
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .container .wrap-article .wrap-item.item-ques .col-boxques .box-content .story .thumb {
@@ -633,13 +638,17 @@ a {
 
 .container .wrap-article .wrap-item.item-donors .title-cate {
   text-align: center;
-  padding: 20px;
+  padding: 10px 0 20px;
 }
 
 .container .wrap-article .wrap-item.item-donors .box-donors {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 20px 20px;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 30px
 }
 
 /*----footer-----*/
@@ -681,10 +690,19 @@ a {
 
 .footer ul {
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 30px;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .footer-info .rank-2 {
   text-align: right;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #666;
 }
