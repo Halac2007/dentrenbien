@@ -860,6 +860,40 @@ a {
     display: flex;
     flex-direction: column;
   }
+
+  .container .wrap-article .wrap-item.item-topic .box-letter {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .wrap-article .wrap-item.item-topic .box-member {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .wrap-article .wrap-item.item-topic .box-companion {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .wrap-article .wrap-item.item-topic .box-listtopic .item.list .story .des .sapo {
+    display: none;
+  }
+  .container .wrap-article .wrap-item.item-topic .box-listtopic .item.list {
+    order: 2;
+  }
+  .container .wrap-article .wrap-item.item-topic .box-listtopic .item.event {
+    order: 1;
+  }
+  .container .wrap-article .wrap-item.item-ques {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .wrap-article .wrap-item.item-ques .col-boxcate .list-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .wrap-article .wrap-item.item-listnews .wrap-list {
+    display: flex;
+    flex-direction: column;
+  }
   .footer-info .rank-1 {
     display: flex;
     flex-direction: column;
