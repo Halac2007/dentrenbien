@@ -4,11 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Alexandria";
 }
 
 .h-24 {
   height: 24px;
+}
+
+.icon {
+  cursor: pointer;
 }
 
 h1 {
@@ -32,13 +36,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 30px;
+header {
+  border-bottom: 1px solid #eee;
+}
 
-  background: #990000;
+header .navigation {
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
 }
 
 .navigation .wrap-logo .logo {
@@ -49,7 +57,13 @@ header .navigation {
   object-fit: cover;
 }
 
+.navigation .search {
+  display: flex;
+  column-gap: 10px;
+}
+
 .navigation .menu {
+  margin-left: auto;
   display: flex;
   justify-content: center;
 }
@@ -62,15 +76,13 @@ ul {
 
 .navigation .menu .main>a {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5;
   height: 40px;
   padding: 0 10px;
-  color: #fff;
   display: flex;
   align-items: center;
   white-space: nowrap;
-  text-transform: uppercase;
 }
 
 a {
