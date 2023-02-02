@@ -7,6 +7,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.h-24 {
+  height: 24px;
+}
+
 h1 {
   font-size: 18px;
   padding: 5px 0;
@@ -228,7 +232,7 @@ a {
   justify-content: space-around;
   padding: 20px;
 
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .container .wrap-article .wrap-item.item-topic .box-letter .title {
@@ -242,7 +246,7 @@ a {
   justify-content: space-around;
   padding: 20px;
 
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .container .wrap-article .wrap-item.item-topic .box-member .title {
@@ -256,7 +260,7 @@ a {
   justify-content: space-around;
   padding: 20px;
 
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .container .wrap-article .wrap-item.item-topic .box-companion .title {
